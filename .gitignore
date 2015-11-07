@@ -7,5 +7,5 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 camtest.iml
-test/
+test
 example*
