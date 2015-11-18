@@ -80,7 +80,7 @@ public class App {
             // END SNIPPET: e5
 
             // wait a bit and then stop
-            Thread.sleep(1000);
+            Thread.sleep(5000);
             context.stop();
         } catch (Exception e) {
             e.printStackTrace();

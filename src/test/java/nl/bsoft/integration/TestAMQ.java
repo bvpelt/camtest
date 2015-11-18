@@ -122,7 +122,7 @@ public class TestAMQ {
 
         Document doc = new Document();
         doc.setTitle("Mijn test document");
-        doc.setKeywords(new String[] {"test", "json", "document"});
+        doc.setKeywords(new String[]{"test", "json", "document"});
         doc.setDescription("Leeg document, gebruikt voor testen");
         int year = 2015;
         int month = Calendar.FEBRUARY;

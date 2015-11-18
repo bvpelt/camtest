@@ -13,11 +13,18 @@ import java.util.Calendar;
 public class TestDocument {
     private static Logger logger = LoggerFactory.getLogger(TestDocument.class);
 
-    private static String jsonTest = "{\"title\":\"Dit is een test\",\"description\":\"Omschrijving van dit document\",\"keywords\":[\"test\",\"document\",\"omschrijving\"],\"publicationDate\":1425158114000}";
+    private static String docType = "nl.bsoft.integration.Document";
     private static String title = "Dit is een test";
     private static String description = "Omschrijving van dit document";
-    private static String [] keywords = { "test", "document", "omschrijving" };
+    private static String kw1 = "test";
+    private static String kw2 = "document";
+    private static String kw3 = "omschrijving";
+    private static String[] keywords = {kw1, kw2, kw3};
     private static long timeinMills = 1425158114000L;
+
+    private static String jsonTest = "{\"documentType\":\"" + docType + "\",\"title\":\"" + title +
+            "\",\"description\":\"" + description +
+            "\",\"keywords\":[\"" + kw1 + "\",\"" + kw2 + "\",\"" + kw3 + "\"],\"publicationDate\":" + (new Long(timeinMills)).toString() + "}";
 
     @Test
     public void testCreateDocument() {

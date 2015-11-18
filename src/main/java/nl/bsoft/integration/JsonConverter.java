@@ -66,6 +66,7 @@ public class JsonConverter {
         }
         return result;
     }
+
     /**
      * Get text value of a json field
      *
@@ -76,13 +77,13 @@ public class JsonConverter {
         String[] result = null;
         if (node != null) {
             ArrayNode kw;
-            kw = (ArrayNode)node.get("keywords");
+            kw = (ArrayNode) node.get("keywords");
 
             int maxSize = kw.size();
 
             result = new String[maxSize];
 
-            int i =0;
+            int i = 0;
             while (i < maxSize) {
                 result[i] = kw.get(i).getTextValue();
                 i++;
