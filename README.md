@@ -32,5 +32,7 @@ See
 
 ## Tools
 See
++ [couchdb client](https://github.com/helun/Ektorp)
 + [takipi](https://www.takipi.com/)
 + [design patterns](https://dzone.com/articles/memento-pattern-1)
++ [Jackson](http://wiki.fasterxml.com/JacksonHome)

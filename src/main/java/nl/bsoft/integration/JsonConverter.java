@@ -4,9 +4,10 @@ package nl.bsoft.integration;
  * Created by bvpelt on 11/7/15.
  */
 
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.node.ArrayNode;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -85,7 +86,7 @@ public class JsonConverter {
 
             int i = 0;
             while (i < maxSize) {
-                result[i] = kw.get(i).getTextValue();
+                result[i] = kw.get(i).asText();
                 i++;
             }
         }

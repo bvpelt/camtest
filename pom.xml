@@ -16,9 +16,12 @@
         <camel.version>2.16.0</camel.version>
         <activemq.version>5.7.0</activemq.version>
         <slf4j.version>1.7.12</slf4j.version>
-        <jackson.version>1.9.13</jackson.version>
+        <jackson.version>2.6.3</jackson.version>
         <ektorp.version>1.4.2</ektorp.version>
-        <apache.httpcomponents.version>4.5</apache.httpcomponents.version>
+        <apache.httpcomponents.version>4.5.1</apache.httpcomponents.version>
+        <apache.httpcore.version>4.4.1</apache.httpcore.version>
+        <apache.commons.version>2.6</apache.commons.version>
+        <commons.io.version>2.0.1</commons.io.version>
     </properties>
 
     <dependencies>
@@ -29,12 +32,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!--
         <dependency>
             <groupId>org.ektorp</groupId>
             <artifactId>org.ektorp</artifactId>
             <version>${ektorp.version}</version>
         </dependency>
-
+-->
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>
@@ -55,26 +59,71 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+
         <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-joda</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-couchdb</artifactId>
             <version>${camel.version}</version>
         </dependency>
 
+        <!--
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
             <version>1.10</version>
         </dependency>
+        -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${apache.httpcomponents.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>${apache.httpcore.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>${apache.httpcore.version}</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.io.version}</version>
+        </dependency>
+
+         <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${apache.commons.version}</version>
         </dependency>
 
     </dependencies>

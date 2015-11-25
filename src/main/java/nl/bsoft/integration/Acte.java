@@ -27,8 +27,8 @@ public class Acte extends Document {
         int len = 0;
         try {
             this.mimeType = js.getStringNode("mimeType");
-            len = js.getNode().get("baseDocument").getBinaryValue().length;
-            baseDocument = Arrays.copyOf(js.getNode().get("baseDocument").getBinaryValue(), len);
+            len = js.getNode().get("baseDocument").binaryValue().length;
+            baseDocument = Arrays.copyOf(js.getNode().get("baseDocument").binaryValue(), len);
         } catch (IOException e) {
             e.printStackTrace();
         }
