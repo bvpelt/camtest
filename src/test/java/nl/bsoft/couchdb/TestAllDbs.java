@@ -18,7 +18,7 @@ public class TestAllDbs {
     private String n2 = "_users";
     private String n3 = "albums";
 
-    private String [] dbsa = {n1, n2, n3};
+    private String [] dbsarray = {n1, n2, n3};
 
     private String dbs = "[\"" + n1 + "\",\"" + n2 + "\",\"" + n3 + "\"]";
 
@@ -42,7 +42,10 @@ public class TestAllDbs {
     public void createAllDbs() {
         AllDbs ab = new AllDbs();
 
-        ab.setNames(dbsa);
+        ab.setNames(dbsarray);
+
+        String a = ab.getNames().toString();
+        logger.info("Arrays: {}", a);
 
         String result = null;
         try {
