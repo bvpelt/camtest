@@ -21,7 +21,7 @@
         <apache.httpcomponents.version>4.5.1</apache.httpcomponents.version>
         <apache.httpcore.version>4.4.1</apache.httpcore.version>
         <apache.commons.version>2.6</apache.commons.version>
-        <commons.io.version>2.0.1</commons.io.version>
+        <commons.io.version>2.7</commons.io.version>
     </properties>
 
     <dependencies>
