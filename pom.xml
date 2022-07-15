@@ -16,7 +16,7 @@
         <camel.version>2.16.0</camel.version>
         <activemq.version>5.7.0</activemq.version>
         <slf4j.version>1.7.12</slf4j.version>
-        <jackson.version>2.6.3</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
         <ektorp.version>1.4.2</ektorp.version>
         <apache.httpcomponents.version>4.5.1</apache.httpcomponents.version>
         <apache.httpcore.version>4.4.1</apache.httpcore.version>
